@@ -1,2 +1,5 @@
-// Lists all documents with name starting by Alx in the school collection.
-db.school.find({name: /Alx.*/}).forEach(printjson);
+// Script to list all documents in the 'school' collection with names starting with "ALX"
+// Usage: cat 100-find | mongo <database_name>
+
+// Use a regular expression to match names beginning with "ALX"
+db.school.find({ name: /^ALX/ });

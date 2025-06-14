@@ -1,2 +1,5 @@
-// Lists all documents with name="Alx school" in the school collection.
-db.school.find({name: "Alx school"}).forEach(printjson);
+// Script to list all documents in the 'school' collection with name="ALX"
+// Usage: cat 4-match | mongo <database_name>
+
+// Query for documents where name equals 'ALX'
+db.school.find({ name: "ALX" });
